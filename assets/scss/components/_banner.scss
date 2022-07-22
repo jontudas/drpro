@@ -7,11 +7,27 @@
     top: 0;
     width: 100%;
   }
-.drpro-banner-section {
-    background-image: url('/assets/img/banner/bg.png');
+  .drpro-banner-section {
+    padding: 150px 0 0px;
+  }
+  // .drpro-banner-section {
+  //   background-image: url("/assets/img/banner/bg.png");
+  //   background-image: linear-gradient(to bottom, rgba(32, 64, 255, 0),#253A1A 82%), url("/assets/img/banner/bg.png");
+  //   background-size: cover;
+  // }
+  .drpro-banner-section {
+    background-image: url("/assets/img/banner/bg.png");
+    background-size: contain;
+  }
+  .drpro-banner-content {
+    margin-top: -64px;
+    position: relative;
+    padding: 0px 0px 92px;
+    background: rgb(46, 66, 30);
+    background: -webkit-gradient(linear, left bottom, left top, from(rgb(46, 66, 30)), color-stop(81%, rgb(46, 66, 30)), to(rgba(46, 66, 30, 0)));
+    background: linear-gradient(360deg, rgb(46, 66, 30) 0%, rgb(46, 66, 30) 81%, rgba(46, 66, 30, 0) 100%);
   }
 .drpro-banner-section {
-    background-color: $primary_color;
     text-align: center;
     .br-banner-content {
         font-size: 30px;
@@ -32,7 +48,7 @@
     }
 
     .dr-banner-social-box {
-        bottom: 25%;
+        bottom: 316px;
         a {
             display: inline-block;
             width: 40px;
@@ -51,10 +67,45 @@
           }
     }
     .dr-banner-search-ber {
-        bottom: 10%;
+        bottom: 120px;
+        margin-left: 10px
         img {
             height: 14px;
         }
       }
   
+}
+.drpro-image {
+  .img {
+    .drpro-service1 { 
+        top: 30%;
+        right: 80%;
+    }
+    .drpro-service2 {
+      top: 61%;
+      right: 86%;
+    }
+    .drpro-service3 {
+      top: 57%;
+      right: 10%;
+    }
+    .drpro-service4 {
+      top: 25%;
+      right: 18%;
+    }
+
+    .service {
+      background-color: #2E421E;
+      height: 60px;
+      width: 60px;
+      border-radius: 4px;
+      display: flex;
+      align-items: center;
+      justify-content: center
+      ;
+    }
+    .bg-yellow  {
+      background-color: #FF9400;
+    }
+  }
 }

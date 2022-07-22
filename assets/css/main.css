@@ -1714,11 +1714,24 @@ input:focus::placeholder, textarea:focus::placeholder {
 }
 
 .drpro-banner-section {
-  background-image: url("/assets/img/banner/bg.png");
+  padding: 150px 0 0px;
 }
 
 .drpro-banner-section {
-  background-color: #2E421E;
+  background-image: url("/assets/img/banner/bg.png");
+  background-size: contain;
+}
+
+.drpro-banner-content {
+  margin-top: -64px;
+  position: relative;
+  padding: 0px 0px 92px;
+  background: rgb(46, 66, 30);
+  background: -webkit-gradient(linear, left bottom, left top, from(rgb(46, 66, 30)), color-stop(81%, rgb(46, 66, 30)), to(rgba(46, 66, 30, 0)));
+  background: linear-gradient(360deg, rgb(46, 66, 30) 0%, rgb(46, 66, 30) 81%, rgba(46, 66, 30, 0) 100%);
+}
+
+.drpro-banner-section {
   text-align: center;
 }
 .drpro-banner-section .br-banner-content {
@@ -1739,7 +1752,7 @@ input:focus::placeholder, textarea:focus::placeholder {
   color: #FF9400;
 }
 .drpro-banner-section .dr-banner-social-box {
-  bottom: 25%;
+  bottom: 316px;
 }
 .drpro-banner-section .dr-banner-social-box a {
   display: inline-block;
@@ -1764,10 +1777,44 @@ input:focus::placeholder, textarea:focus::placeholder {
   margin-bottom: 12px;
 }
 .drpro-banner-section .dr-banner-search-ber {
-  bottom: 10%;
+  bottom: 120px;
+  margin-left: 10px img;
+  margin-left-height: 14px;
 }
-.drpro-banner-section .dr-banner-search-ber img {
-  height: 14px;
+
+.drpro-image .img .drpro-service1 {
+  top: 30%;
+  right: 80%;
+}
+.drpro-image .img .drpro-service2 {
+  top: 61%;
+  right: 86%;
+}
+.drpro-image .img .drpro-service3 {
+  top: 57%;
+  right: 10%;
+}
+.drpro-image .img .drpro-service4 {
+  top: 25%;
+  right: 18%;
+}
+.drpro-image .img .service {
+  background-color: #2E421E;
+  height: 60px;
+  width: 60px;
+  border-radius: 4px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.drpro-image .img .bg-yellow {
+  background-color: #FF9400;
 }
 
 /*
