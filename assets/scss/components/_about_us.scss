@@ -1,0 +1,464 @@
+@use '../abstracts/variables' as *;
+@use '../abstracts/mixins' as *;
+
+.about-container {
+    max-width: 1540px;
+  
+}
+
+.karx-market-content-absimg.mtm-100 {
+    height: 870px;
+    @media #{$xs} {
+        height: 600px;
+    }
+    img {
+        height: 100%;
+        object-fit: cover;
+    }
+}
+.karx-about-img {
+    height: 805px;
+    @media #{$xs, $md, $lg, $xl} {
+        height: 700px;
+    }
+    img {
+        height: 100%;
+        object-fit: cover;
+    }
+}
+.row.gap-15 {
+	--bs-gutter-x: 15px;
+}
+.about-subtitle {
+    font-size: 20px;
+    line-height: 1.2;
+    font-weight: 600;
+    color: #ff630e;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+.about-title {
+    font-size: 46px; 
+    @media #{$lg} {
+		font-size: 50px;
+	}
+     @media #{$md} {
+		font-size: 42px;
+	
+    }
+    @media #{$xs} {
+        font-size: 32px;
+	}
+    @media #{$sm} {
+        font-size: 36px;
+	}
+
+    br {
+        @media #{$xs} {
+            display: none;
+        }
+    }
+}
+
+.karx-about-text {
+    @media #{$xl} { 
+        margin-bottom: 22px;
+    }
+}
+.karx-about-task{
+    @media #{$xl} { 
+        margin-bottom: 28px;
+    }
+}
+
+
+
+.karx-about-task-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    li {
+        display: block;
+        position: relative;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 1.7;
+        z-index: 1;
+        @media #{$xs}{
+           display: flex;
+           margin-bottom: 5px;
+        }
+        i {
+            font-size: 14px;
+            padding: 5px;
+            background-color: #F1F3F2;
+            border-radius: 50%;
+            color: #707480;
+            display: inline-block;
+            margin-right: 10px;
+            @media #{$xs}{
+                // padding: 0px;
+                height: 30px;
+                width: 30px;
+                line-height: 20px;
+                text-align: center;
+            }
+        }
+        &:not(:last-child) {
+            margin-bottom: 10px;
+        }
+    }
+}
+
+
+
+.karx-about-testimonial {
+    background-color: #F1F3F2;
+    padding: 30px;
+    position: relative;
+    z-index: 1;
+    @media #{$xl, $lg, $md}{
+        padding: 50px
+    }
+    @media #{$xs}{
+        padding: 30px
+    }
+    @media #{$sm}{
+        padding: 40px
+    }
+  }
+  .karx-about-testimonial-quote {
+    font-size: 20px;
+    line-height: 1.4;
+    color: #707480;
+  
+    @media #{$md,$lg}{
+        font-size: 22px;
+    }
+    @media #{$xs}{
+        font-size: 20px;
+    }
+    @media #{$sm}{
+        font-size: 22px;
+    }
+  }
+  .karx-about-content {
+
+    img {
+        border-radius: 50%;
+        margin-right: 15px;
+    }
+      
+  }
+  .market-content-right-wrapper.ml-40 {
+    @media #{$xs, $md, $lg} {
+        margin-left: 0;
+    }
+  }
+  .karx-support-author {
+    font-weight: 700;
+    font-size: 18px;
+ 
+    @media #{$sm,$md,$lg}{
+        font-size: 20px;
+    }
+  }
+  .karx-support-icon-quote {
+    position: absolute;
+    font-size: 35px;
+    line-height: 1;
+    bottom: 30px;
+    right: 30px;
+    @media #{$xl,$lg, $md}{
+        bottom: 50px;
+        right: 50px;
+    }
+
+    @media #{$xs}{
+        font-size: 24px;
+        bottom: 30px;
+        right: 30px;
+    }
+    @media #{$sm}{
+        right: 40px;
+        bottom: 40px;
+        font-size: 28px;
+    }
+  }
+
+  .karx-about-left-img-area {
+    height: 795px;
+    @media #{$xl, $lg, $md, $xs} {
+        height: auto;
+    }
+  }
+.karx-about-img-text-wrapp.mt-15 {
+    @media #{$xs} {
+        margin-bottom: 15px;
+    }
+    @media #{$sm} {
+        margin-bottom: 0;
+    }
+}
+.karx-about-left-img {
+    position: relative;
+    height: calc(100% - 190px);
+    @media #{$xl} {
+        height: 565px;
+    }
+    @media #{$lg} {
+        height: 575px;
+    }
+    @media #{$md} {
+        height: 510px;
+    }
+    @media #{$sm} {
+        height: 511px;
+    }
+    img {
+        min-height: 100%;
+        object-fit: cover;
+        @media #{$xl, $lg, $md, $xs} {
+            min-height: 100%;
+            height: 100%;
+        }
+    }
+}
+.karx-about-play-icon {
+    width: 150px;
+    height: 130px;
+    background-color: #FF630E;
+    display: inline-block;
+    color: #fff;
+    font-size: 35px;
+    text-align: center;
+    line-height: 130px;
+    top: 100px;
+    left: 0;
+    position: absolute;
+    margin-left: -75px;
+    &:hover{
+        background-color: #1a213e;
+        color: #fff;
+    }
+    @media #{$xxxl}{
+        width: 130px;
+        height: 110px;
+        font-size: 32px;
+        line-height: 110px;
+        margin-left: -33px;
+    }
+    @media #{$xxl,$xl,$lg}{
+        width: 102px;
+        height: 90px;
+        font-size: 31px;
+        line-height: 90px;
+        margin-left: 0px
+    }
+     @media #{$md}{
+        width: 90px;
+        height: 76px;
+        font-size: 28px;
+        line-height: 75px;
+        top: 78px;
+        margin-left:0px;
+    }
+      
+    @media #{$xs}{
+        width: 75px;
+        height: 60px;
+        font-size: 25px;
+        line-height: 60px;
+        top: 65px;
+        margin-left:0px;
+    }
+
+     @media #{$sm}{
+        width: 102px;
+        height: 90px;
+        font-size: 31px;
+        line-height: 90px;
+        margin-left: 0px
+    }
+    
+}
+
+
+
+.karx-about-img-text-wrapp {
+    background-color: #FF630E;
+    padding: 40px;
+    padding-top: 35px;
+  
+}
+
+   @media #{$lg}{
+    .karx-about-img.w_100 img {
+        height: 785px;
+      }
+    
+}
+
+.karx-about-img-text {
+    font-size: 46px;
+    color: #fff;
+    text-align: center;
+    @media #{$xl} {
+		font-size: 38px;
+	}
+    @media #{$lg} {
+		font-size: 50px;
+	}
+     @media #{$md} {
+		font-size: 42px;
+	
+    }
+    @media #{$xs} {
+        font-size: 32px;
+	}
+    @media #{$sm} {
+        font-size: 36px;
+	}
+
+}
+
+
+/* About 2 CSS */
+
+
+.karx-about-2-img-wrapper {
+    position: relative;
+    z-index: 1;
+
+    .karx-about-2-img {
+        img {
+            width: 810px;
+            height: 770px;
+        }
+    }
+
+    .karx-about-img-text-wrapp {
+        background-color: #FF630E;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 450px;
+        height: 250px;
+
+        .karx-about-img-text {
+            text-align: left;
+
+            span {
+                font-size: 70px;
+            }
+        }
+    }
+}
+.pos-abs-img {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+.karx-about-2-service-task {
+
+    &:hover {
+        .karx-about-2-service-icon {
+            background-color: $primary_color;
+        }
+    }
+}
+.karx-about-2-service-icon {
+    background: #f1f3f2;
+    width: 90px;
+    text-align: center;
+    height: 80px;
+    clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+    line-height: 80px;
+    @include transition(.3s)
+
+}
+.karx-about-2-service-text {
+    .karx-about-2-service-title {
+        text-transform: capitalize;
+        font-size: 28px;
+    }
+    p {
+        margin: 0;
+    }
+}
+.karx-about-2-person-btn {
+
+    a {
+        font-size: 18px;
+        text-transform: capitalize;
+        background: $primary_color;
+        color: $white-color;
+        display: inline-block;
+        padding: 15px 35px;
+
+        &:hover {
+            background-color: $secendary_color;
+        }
+        
+    }
+    .btn-plus-icon::after {
+        content: "\f067";
+        font-family: "font awesome 5 pro";
+        margin-left: 5px;
+    }
+}
+.karx-about-2-parson-wrapper {
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+
+    .parson-img {
+        display: inline-block;
+        margin-right: 20px;
+        img {
+            display: inline-block;
+            width: 70px;
+            height: 70px;
+            border-radius: 50%;
+        }
+    }
+    .parson-text {
+        display: inline-block;
+        a {
+            display: block;
+            font-size: 24px;
+            font-weight: 700;
+            text-transform: capitalize;
+            color: #1a213e;
+
+            &:hover {
+                color: $primary_color;
+            }
+        }
+        span {
+            font-size: 14px;
+            text-transform: capitalize;
+            display: block;
+        }
+    }
+}
+
+
+.karx-feature-2-single {
+    border: 1px solid #ddd;
+}
+.karx-feature-2-btn {
+    display: inline-block;
+    height: 60px;
+    border: 1px solid #ddd;
+    line-height: 60px;
+    padding: 0 30px;
+    border-bottom: 0;
+    font-weight: 600;
+    color: #1a213e;
+    &:hover {
+        color: #fff;
+        background-color: #ff630e;
+        border-color: #ff630e;
+    }
+}
