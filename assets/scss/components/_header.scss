@@ -1,16 +1,28 @@
-.bg-primary2 {
-  background-color: #2E421E;
-  padding: 20px 0;
+@use '../abstracts/variables' as *;
+
+.dr-header-section {
+  padding: 34px;
 }
+
 .container-2 {
     max-width: 1815px;
   }
-
-  .dr-header-button {
+  .dr-header-button  {
     width: 200px;
     height: 60px;
-    background-color: red;
+    background-color: transparent;
     color: #fff;
     display: flex;
-    ;
+    border: 1px solid #0000002e;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    box-shadow: 5px 5px 0px 0px #0000002e;
+  }
+  .dr-header-ber {
+    margin-right: 48px;
+    a {
+      color: #fff;
+      font-size: 28px;
+    }
   }

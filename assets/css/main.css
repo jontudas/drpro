@@ -53,7 +53,7 @@ CSS INDEX
 }
 
 body {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Mulish", sans-serif;
   font-weight: 400;
   font-style: normal;
   color: #707480;
@@ -121,7 +121,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Poppins", sans-serif;
+  font-family: "Mulish", sans-serif;
   color: #1a213e;
   margin-top: 0px;
   font-weight: 700;
@@ -174,7 +174,7 @@ p {
   line-height: 28px;
   color: #707480;
   margin-bottom: 15px;
-  font-family: "Poppins", sans-serif;
+  font-family: "Mulish", sans-serif;
   font-weight: 400;
 }
 
@@ -1669,9 +1669,8 @@ input:focus::placeholder, textarea:focus::placeholder {
   --bs-gutter-x: 0;
 }
 
-.bg-primary2 {
-  background-color: #2E421E;
-  padding: 20px 0;
+.dr-header-section {
+  padding: 34px;
 }
 
 .container-2 {
@@ -1681,11 +1680,94 @@ input:focus::placeholder, textarea:focus::placeholder {
 .dr-header-button {
   width: 200px;
   height: 60px;
-  background-color: red;
+  background-color: transparent;
   color: #fff;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  border: 1px solid rgba(0, 0, 0, 0.1803921569);
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 4px;
+  -webkit-box-shadow: 5px 5px 0px 0px rgba(0, 0, 0, 0.1803921569);
+          box-shadow: 5px 5px 0px 0px rgba(0, 0, 0, 0.1803921569);
+}
+
+.dr-header-ber {
+  margin-right: 48px;
+}
+.dr-header-ber a {
+  color: #fff;
+  font-size: 28px;
+}
+
+.header-transparent {
+  position: absolute;
+  left: 0;
+  z-index: 3;
+  top: 0;
+  width: 100%;
+}
+
+.drpro-banner-section {
+  background-image: url("/assets/img/banner/bg.png");
+}
+
+.drpro-banner-section {
+  background-color: #2E421E;
+  text-align: center;
+}
+.drpro-banner-section .br-banner-content {
+  font-size: 30px;
+  font-weight: 400;
+  color: #CBCBCB;
+  font-family: "Mulish", sans-serif;
+  text-transform: capitalize;
+}
+.drpro-banner-section .dr-banner-title {
+  font-size: 72px;
+  color: #fff;
+  font-family: "Mulish", sans-serif;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+.drpro-banner-section .dr-banner-title span {
+  color: #FF9400;
+}
+.drpro-banner-section .dr-banner-social-box {
+  bottom: 25%;
+}
+.drpro-banner-section .dr-banner-social-box a {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  color: #fff;
+  background-color: #253A1A;
+  font-size: 17px;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 0px;
+}
+.drpro-banner-section .dr-banner-social-box a:not(:last-child) {
+  margin-bottom: 12px;
+}
+.drpro-banner-section .dr-banner-search-ber {
+  bottom: 10%;
+}
+.drpro-banner-section .dr-banner-search-ber img {
+  height: 14px;
 }
 
 /*

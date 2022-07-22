@@ -50,7 +50,7 @@ CSS INDEX
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
 
  body {
-    font-family: $opensans;
+    font-family: $mulish;
     font-weight: 400;
     font-style: normal;
     color: $font-color;
@@ -104,7 +104,7 @@ h3,
 h4,
 h5,
 h6 {
-	font-family: $poppins;
+	font-family: $mulish;
 	color: $secendary_color;
 	margin-top: 0px;
 	font-weight: 700;
@@ -149,7 +149,7 @@ p {
 	line-height: 28px;
 	color: $font-color;
 	margin-bottom: 15px;
-    font-family: $poppins;
+    font-family: $mulish;
     font-weight: 400;
 }
 

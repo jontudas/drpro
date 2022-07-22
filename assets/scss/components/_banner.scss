@@ -1,0 +1,60 @@
+@use '../abstracts/variables' as *;
+
+.header-transparent {
+    position: absolute;
+    left: 0;
+    z-index: 3;
+    top: 0;
+    width: 100%;
+  }
+.drpro-banner-section {
+    background-image: url('/assets/img/banner/bg.png');
+  }
+.drpro-banner-section {
+    background-color: $primary_color;
+    text-align: center;
+    .br-banner-content {
+        font-size: 30px;
+        font-weight: 400;
+        color: #CBCBCB;
+        font-family: $mulish;
+        text-transform: capitalize;
+    }
+    .dr-banner-title {
+        font-size: 72px;
+        color: #fff;
+        font-family: $mulish;
+        font-weight: bold;
+        text-transform: capitalize;
+        & span {
+            color: #FF9400;
+        }
+    }
+
+    .dr-banner-social-box {
+        bottom: 25%;
+        a {
+            display: inline-block;
+            width: 40px;
+            height: 40px;
+            color: #fff;
+            background-color: #253A1A;
+            font-size: 17px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 0px;
+          }
+          & a:not(:last-child) {
+            margin-bottom: 12px;
+          }
+    }
+    .dr-banner-search-ber {
+        bottom: 10%;
+        img {
+            height: 14px;
+        }
+      }
+  
+}
